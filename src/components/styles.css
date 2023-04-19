@@ -1,0 +1,95 @@
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+.inputBox:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.082);
+}
+
+.inputSubmit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  border-radius: 50px;
+  margin: 12px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(8, 171, 241);
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
+.inputSubmit:hover {
+  background-color: rgb(34, 189, 255);
+}
+.inputSubmit:active {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px black;
+}
+
+.todos {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid; */
+}
+.todo {
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  width: 29.5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.todotext {
+  flex: 1;
+}
+
+.actionIcons {
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  cursor: pointer;
+}
+.editinput {
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .todo {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .todos {
+    width: 95%;
+  }
+  .input {
+    width: 95%;
+  }
+  .todo {
+    width: 90%;
+  }
+}
